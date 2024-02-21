@@ -1,38 +1,13 @@
-# create-svelte
+# Long range brilliance
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A responsive scatterplot implemented with [Svelte](https://svelte.dev) and [D3](https://d3js.org/) showing
+minutes played and 3-point field goals made by the best 3-point shooters in NBA history.
 
-## Creating a project
+Hovering over the chart causes figures to appear. The mouse pointer does not have to be placed over each circle to reveal stats about the corresponding player.
+Associated stats will be shown when the pointer is close enough to one of the circles. This feature, which improves the user experience, was implemented with a [quadtree](https://github.com/d3/d3-quadtree).
 
-If you're seeing this, you've probably already done this step. Congrats!
+This project was bootstrapped with the [Svelte app template](https://github.com/sveltejs/template). The player selector was implemented with [svelte-select](https://github.com/rob-balfre/svelte-select).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Data source
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[NBA](https://www.nba.com/stats/)
